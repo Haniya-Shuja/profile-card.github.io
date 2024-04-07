@@ -1,0 +1,35 @@
+@keyframes buttonAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .button {
+    animation: buttonAnimation 1s infinite alternate; /* Applies the animation infinitely */
+  }
+
+  .button {
+    transition: transform 0.3s ease;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+  }
+  
+  .animated {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .animated.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
